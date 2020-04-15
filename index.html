@@ -5,13 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./home/home.css">
     <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <h1>Adventure Quest</h1>
+    </header>
+    <main>
+        <h2>Start your adventure!</h2>
+        <form id="user-sign-up">
+            <label for="name">Enter your name: 
+                <input id="name" name="name" required>
+            </label>
+            
+            <h2>Pick your character:</h2>
+            <p id="avatars">
+                <label>
+                    Link
+                    <input type="radio" name="character-choice" required value="link">
+                    <img src="./assets/user/link.jpg">
+                </label>
+                <label>
+                    Zelda
+                    <input type="radio" name="character-choice" required value="zelda">
+                    <img src="./assets/user/zelda.png">
+                </label>
+                <label>
+                    Midna
+                    <input type="radio" name="character-choice" required value="midna">
+                    <img src="./assets/user/midna.png">
+                </label>
+                <label>
+                    Epona
+                    <input type="radio" name="character-choice" required value="epona">
+                    <img src="./assets/user/epona.png">
+                </label>
+            </p>
+            <button>Start</button>
 
-    <script type="module" src="app.js"></script>
+        </form>
+
+    </main>
+
+    <script type="module" src="./home/home.js"></script>
 </body>
 
 </html>

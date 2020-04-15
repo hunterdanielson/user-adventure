@@ -7,7 +7,7 @@ export const dungeons = [
             left: '55%'
         },
         image: 'forestTemple.jpg',
-        audio: 'forestTemple.wav',
+        //audio: 'forestTemple.wav',
         action: 'openingChest.wav',
         description: 'You see a monkey caged in the middle of the room surrounded by vicious looking plants, to your right you see a chest, to your left is a bridge made of vines that crosses a ravine. What do you do?', 
         choices: [{
@@ -39,7 +39,7 @@ export const dungeons = [
             left: '25%'
         },
         image: 'snowpeakRuins.jpg',
-        audio: 'snowpeakRuins.wav',
+        //audio: 'snowpeakRuins.wav',
         action: 'openingChest.wav',
         description: 'You see a big yeti looking thing in a mansion, it notices you. It seems to be motioning for you to come closer. You also notice a chest to your left. What do you do?', 
         choices: [{
@@ -57,8 +57,8 @@ export const dungeons = [
         }, {
             id: 'talk',
             description: 'Talk with the yeti.',
-            result: 'You talk with the yeti and she tells you she is sick, she would like some soup her mate made in the other room. You retrieve the soup and she and her mate gift you 70 gold.',
-            hp: 0,
+            result: 'You talk with the yeti and she tells you she is sick, she would like some soup her mate made in the other room. You retrieve the soup and she and her mate gift you 70 gold. They also share their soup which has healing properties.',
+            hp: 30,
             gold: 70
         }]
     },
@@ -70,7 +70,7 @@ export const dungeons = [
             left: '45%'
         },
         image: 'lakebedTemple.jpg',
-        audio: 'lakebedTemple.wav',
+        //audio: 'lakebedTemple.wav',
         action: 'openingChest.wav',
         description: 'You swim down into this giant underwater temple. It seems water has not filled the inside yet, but is starting to flow in fast. There is a lever towards the back of the room. What do you do?', 
         choices: [{
