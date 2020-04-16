@@ -5,8 +5,8 @@ export function renderDungeonLinks(dungeon) {
     link.href = '../dungeon/?id=' + dungeon.id;
 
     // set the location of where it should appear
-    // link.style.top = dungeon.map.top;
-    // link.style.left = dungeon.map.left;
+    link.style.top = dungeon.map.top;
+    link.style.left = dungeon.map.left;
     // set the name of the link
     link.textContent = dungeon.title;
 

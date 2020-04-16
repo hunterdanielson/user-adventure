@@ -47,7 +47,11 @@ export function completedAllDungeons(dungeons, user) {
         }
     }
     
-    // why does this for each loop not do the same as for loop above
+    // i got stuck on this for so long, because it seemed to work the same as the for loop
+    // the for loop seems to function as intended, while the forEach does not
+    // I think the forEach loops through but instead of returning false and exiting it returns true
+    // not sure why this is
+    // so my question is why does this for each loop not do the same as for loop above
     // dungeons.forEach(dungeon => {
     //     // check if its dungeon id appears on the user completed object, if not user not done
     //     const dungeonId = dungeon.id;

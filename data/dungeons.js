@@ -3,8 +3,8 @@ export const dungeons = [
         id: 'forest',
         title: 'Forest Temple',
         map: {
-            top: '70%',
-            left: '55%'
+            top: '60%',
+            left: '30%'
         },
         image: 'forestTemple.jpg',
         //audio: 'forestTemple.wav',
@@ -35,8 +35,8 @@ export const dungeons = [
         id: 'snow',
         title: 'Snowpeak Ruins',
         map: {
-            top: '20%',
-            left: '25%'
+            top: '10%',
+            left: '20%'
         },
         image: 'snowpeakRuins.jpg',
         //audio: 'snowpeakRuins.wav',
@@ -66,8 +66,8 @@ export const dungeons = [
         id: 'lake',
         title: 'Lakebed Temple',
         map: {
-            top: '55%',
-            left: '45%'
+            top: '49%',
+            left: '22%'
         },
         image: 'lakebedTemple.jpg',
         //audio: 'lakebedTemple.wav',
@@ -83,7 +83,7 @@ export const dungeons = [
             id: 'deeper',
             description: 'Go deeper into the temple.',
             result: 'Down in the depths you find a chest, in that chest is a clawshot which allows you to shoot up to the surface in no time. Since you have some spare time before the temple fills with water you look around and find another chest with 40 gold.',
-            hp: -50,
+            hp: 0,
             gold: 40
         }, {
             id: 'lever',
