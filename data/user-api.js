@@ -22,7 +22,12 @@ export function makeUser(formData) {
         character: formData.get('character-choice'),
         hp: 100,
         gold: 0,
-        completed: {},
+        completed: {
+            forest: false,
+            snow: false,
+            lake: false,
+
+        },
     };
     return user;
 }

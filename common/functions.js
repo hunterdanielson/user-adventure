@@ -42,11 +42,13 @@ export function completedAllDungeons(dungeons, user) {
     // loop through each dungeon
     dungeons.forEach(dungeon => {
         // check if its dungeon id appears on the user completed object, if not user not done
-        if (!user.comleted[dungeon.id]) {
+        const dungeonId = dungeon.id;
+        const userComplete = user.completed[dungeonId];
+        if (userComplete === false) {
             return false;
         }
     });
     // if it makes it here all dungeons have passed
-    return;
+    return true;
 
 }

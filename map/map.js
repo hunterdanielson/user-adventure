@@ -1,15 +1,15 @@
 import { getUser } from '../data/user-api.js';
 import { dungeons } from '../data/dungeons.js';
-import { loadProfile, isDead, completedDungeons } from '../common/functions.js';
+import { loadProfile, isDead, completedAllDungeons } from '../common/functions.js';
 import { renderDungeonLinks, renderCompletedDungeon } from './renders.js';
 
 loadProfile();
 
 // grab the user from storage
 const user = getUser();
-
+console.log(user);
 // check if the game is over
-if (isDead(user) || completedDungeons(dungeons, user)) {
+if (isDead(user) || completedAllDungeons(dungeons, user) === true) {
     window.location = '../results';
 }
 
