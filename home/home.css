@@ -1,16 +1,5 @@
-#avatars {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px 10px;
-}
 
 label > img {
     height: 300px;
     width: 220px;
-}
-
-#avatar {
-    height: 80px;
-    width: 50px;
 }

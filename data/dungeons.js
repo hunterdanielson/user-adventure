@@ -26,7 +26,7 @@ export const dungeons = [
             id: 'left',
             description: 'Go left accross the bridge.',
             result: 'You get halfway across the bridge when an ape notices you, and since you did not save his friend he cuts the bridge and you fall to your death.',
-            hp: -100,
+            hp: -150,
             gold: 0
         }]
 
@@ -88,7 +88,7 @@ export const dungeons = [
         }, {
             id: 'lever',
             description: 'Pull the lever.',
-            result: 'Pulling the lever has opened the floodgates. The temple quickly fills with little time to react, you die. But at least you found 30 gold in your last few seconds.',
+            result: 'Pulling the lever has opened the floodgates. The temple quickly fills with little time to react. But at least you found 30 gold in your last few seconds.',
             hp: -100,
             gold: 30
         }]

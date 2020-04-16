@@ -10,16 +10,16 @@ export function loadProfile() {
     // get the user data
     const user = getUser();
     
-    name.textContent = user.name;
+    name.textContent = 'Name: ' + user.name;
     avatar.src = '../assets/user/' + user.character + '.png';
     
-    gold.textContent = user.gold;
+    gold.textContent = 'Rupies: ' + user.gold;
 
     // check if user is dead, if are show they died, if not show their hp
     if (isDead(user)) {
         hp.textContent = 'Dead';
     } else {
-        hp.textContent = user.hp;
+        hp.textContent = 'HP: ' + user.hp;
     }
 }
 
@@ -60,7 +60,30 @@ export function completedAllDungeons(dungeons, user) {
     //         return false;
     //     }
     // });
+
     // if it makes it here all dungeons have passed
     return true;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
