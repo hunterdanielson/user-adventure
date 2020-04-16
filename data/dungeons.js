@@ -8,7 +8,7 @@ export const dungeons = [
         },
         image: 'forestTemple.jpg',
         //audio: 'forestTemple.wav',
-        action: 'openingChest.wav',
+        action: 'openingChest.mp3',
         description: 'You see a monkey caged in the middle of the room surrounded by vicious looking plants, to your right you see a chest, to your left is a bridge made of vines that crosses a ravine. What do you do?', 
         choices: [{
             id: 'middle',
@@ -40,7 +40,7 @@ export const dungeons = [
         },
         image: 'snowpeakRuins.jpg',
         //audio: 'snowpeakRuins.wav',
-        action: 'openingChest.wav',
+        action: 'openingChest.mp3',
         description: 'You see a big yeti looking thing in a mansion, it notices you. It seems to be motioning for you to come closer. You also notice a chest to your left. What do you do?', 
         choices: [{
             id: 'leave',
@@ -71,7 +71,7 @@ export const dungeons = [
         },
         image: 'lakebedTemple.jpg',
         //audio: 'lakebedTemple.wav',
-        action: 'openingChest.wav',
+        action: 'openingChest.mp3',
         description: 'You swim down into this giant underwater temple. It seems water has not filled the inside yet, but is starting to flow in fast. There is a lever towards the back of the room. What do you do?', 
         choices: [{
             id: 'swimUp',

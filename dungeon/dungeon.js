@@ -21,6 +21,7 @@ if (!dungeon) {
 // get dom stuff
 const title = document.getElementById('title');
 const image = document.getElementById('image');
+const audio = document.getElementById('audio');
 const description = document.getElementById('description');
 const choiceForm = document.getElementById('choice-form');
 const choices = document.getElementById('choices');
@@ -29,6 +30,7 @@ const resultDescription = document.getElementById('result-description');
 
 title.textContent = dungeon.title;
 image.src = '../assets/dungeons/' + dungeon.image;
+audio.src = '../assets/dungeons/openingChest.mp3'; 
 description.textContent = dungeon.description;
 
 const dungeonChoices = dungeon.choices;
@@ -56,6 +58,7 @@ choiceForm.addEventListener('submit', function(event) {
     saveUser(user);
     // hide the choices
     choiceForm.classList.add('hidden');
+    description.classList.add('hidden');
     // show the result of their choice
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;
