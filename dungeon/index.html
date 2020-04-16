@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home/home.css">
-    <title>Map</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -17,11 +16,18 @@
         </div>
     </header>
     <main>
-        <h2>Choose a dungeon</h2>
-        <nav id="dungeons">
-
-        </nav>
+        <h2 id="title"></h2>
+        <img id="image">
+        <p id="description"></p>
+        <form id="choice-form">
+            <p id="choices"></p>
+            <button>Choose</button>
+        </form>
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="../map">Back to map</a>
+        </section>
     </main>
-    <script src="map.js" type="module"></script>
+    <script src="dungeon.js" type="module"></script>
 </body>
 </html>

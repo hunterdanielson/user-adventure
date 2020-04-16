@@ -8,5 +8,9 @@
 label > img {
     height: 300px;
     width: 220px;
+}
 
+#avatar {
+    height: 80px;
+    width: 50px;
 }
