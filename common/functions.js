@@ -40,14 +40,22 @@ export function findById(passedarray, id) {
 
 export function completedAllDungeons(dungeons, user) {
     // loop through each dungeon
-    dungeons.forEach(dungeon => {
-        // check if its dungeon id appears on the user completed object, if not user not done
-        const dungeonId = dungeon.id;
-        const userComplete = user.completed[dungeonId];
-        if (userComplete === false) {
+    for (let i = 0; i < dungeons.length; i++) {
+        const dungeon = dungeons[i];
+        if (!user.completed[dungeon.id]) {
             return false;
         }
-    });
+    }
+    
+    // why does this for each loop not do the same as for loop above
+    // dungeons.forEach(dungeon => {
+    //     // check if its dungeon id appears on the user completed object, if not user not done
+    //     const dungeonId = dungeon.id;
+    //     const userComplete = user.completed[dungeonId];
+    //     if (!userComplete) {
+    //         return false;
+    //     }
+    // });
     // if it makes it here all dungeons have passed
     return true;
 

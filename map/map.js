@@ -7,9 +7,8 @@ loadProfile();
 
 // grab the user from storage
 const user = getUser();
-console.log(user);
 // check if the game is over
-if (isDead(user) || completedAllDungeons(dungeons, user) === true) {
+if (isDead(user) || completedAllDungeons(dungeons, user)) {
     window.location = '../results';
 }
 
