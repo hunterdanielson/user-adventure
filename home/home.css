@@ -1,5 +1,49 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
 
+body {
+    background-image: url('../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 label > img {
     height: 300px;
     width: 220px;
+}
+
+h1 {
+    font-family: "EB Garamond";
+    color: #8b3536;
+    text-shadow: 0 0 1px darkred;
+}
+h2, label {
+    font-family: "Old Standard TT";
+    color: #eeeeee;
+    text-shadow: 0 0 2px black;
+}
+
+#avatars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 10px;
+}
+
+.zelda-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 10px;
+    position: relative;
+}
+
+.zelda-text {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 505px;
+    height: 220px;
 }
