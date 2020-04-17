@@ -5,13 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./home/home.css">
+    <link rel="stylesheet" href="./common/main.css">
+    <link rel="stylesheet" href="./common/triangle.css">
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+    <title>Create User</title>
 </head>
 
 <body>
+    <header>
 
-    <script type="module" src="app.js"></script>
+    </header>
+    <main>
+        <div class="zelda-container">
+            <div class="stage example example4">
+                <div class="scaler">
+                <div class="triangle one">
+                    <figure class="front"> </figure>
+                    <figure class="back"> </figure>
+                    <figure class="side1"> </figure>
+                    <figure class="side2"> </figure>
+                    <figure class="side3"> </figure>
+                </div>
+                <div class="triangle two">
+                    <figure class="front"> </figure>
+                    <figure class="back"> </figure>
+                    <figure class="side1"> </figure>
+                    <figure class="side2"> </figure>
+                    <figure class="side3"> </figure>
+                </div>
+                <div class="triangle three">
+                    <figure class="front"> </figure>
+                    <figure class="back"> </figure>
+                    <figure class="side1"> </figure>
+                    <figure class="side2"> </figure>
+                    <figure class="side3"> </figure>
+                </div>
+                </div>
+            </div>
+            <div class="zelda-text">
+                <h1>Adventure</h1>
+                <h2>Quest</h2>
+            </div>
+        </div>
+        <form id="user-sign-up">
+            <label for="name">Enter your name: 
+                <input id="name" name="name" required>
+            </label>
+            
+            <h2>Pick your character:</h2>
+            <p id="avatars">
+                <label>
+                    Link
+                    <input type="radio" name="character-choice" required value="link">
+                    <img src="./assets/user/link.png">
+                </label>
+                <label>
+                    Zelda
+                    <input type="radio" name="character-choice" required value="zelda">
+                    <img src="./assets/user/zelda.png">
+                </label>
+                <label>
+                    Midna
+                    <input type="radio" name="character-choice" required value="midna">
+                    <img src="./assets/user/midna.png">
+                </label>
+                <label>
+                    Epona
+                    <input type="radio" name="character-choice" required value="epona">
+                    <img src="./assets/user/epona.png">
+                </label>
+            </p>
+            <button>Start</button>
+
+        </form>
+
+    </main>
+
+    <script type="module" src="./home/home.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#dungeons {
+    position: relative;
+    background-image: url("../assets/map.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    margin: auto;
+}
+
+.dungeon {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.dungeon.completed {
+    color: whitesmoke;
+    font-size: .9em;
+}
+
+.dungeon.completed:after {
+    content: ' ✔';
+}

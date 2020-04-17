@@ -1,0 +1,40 @@
+.hidden {
+    display: none;
+}
+
+#avatar {
+    height: 80px;
+    width: 50px;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border-radius: 999px;
+}
+
+button:hover {
+    animation: myanimation 5s infinite;
+}
+
+@keyframes myanimation {
+    0% {
+      background: white;
+      box-shadow:
+        0 0 5px 0 #ffff34,
+        0 0 5px 0 #ff433b,
+        0 0 5px 0 #ffb428;
+    }
+    
+    100% {
+      color: rgba(0, 0, 0, 1);
+      background: rgba(255, 255, 255, 1);
+      box-shadow:
+        0 -35px 40px 30px rgba(255, 130, 10, 0),
+        0 -30px 30px 10px rgba(230, 30, 10, 0),
+        0 -20px 10px 0 rgba(255, 255, 10, 0);
+    }
+  }

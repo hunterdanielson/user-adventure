@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url('../assets/resultBackground.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h1, h2 {
+    font-family: "EB Garamond";
+    color: #8b3536;
+    text-shadow: 0 0 1px darkred;
+}
+.user-profile, p {
+    font-family: "Old Standard TT";
+    color: #eeeeee;
+    text-shadow: 0 0 2px black;
+}

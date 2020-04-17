@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dungeon.css">
+    <link rel="stylesheet" href="../common/main.css">
+    <title>Dungeon</title>
+</head>
+<body>
+    <header>
+        <h1>Adventure Quest</h1>
+        <div class="user-profile">
+            <img src="" id="avatar">
+            <br>
+            <span id="name"></span>
+            <br>
+            <span id="hp"></span>
+            <br>
+            <span id="gold"></span>
+        </div>
+    </header>
+    <main>
+        <h2 id="title"></h2>
+        <img id="image">
+        <audio id="audio" src="" autoplay></audio>
+        <p id="description"></p>
+        <form id="choice-form">
+            <p id="choices"></p>
+            <button>Choose</button>
+        </form>
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="../map">Back to map</a>
+        </section>
+    </main>
+    <script src="dungeon.js" type="module"></script>
+</body>
+</html>
